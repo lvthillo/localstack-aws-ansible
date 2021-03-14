@@ -1,0 +1,7 @@
+- hosts: localhost
+  tasks:
+  - name: create S3 bucket
+    s3_bucket:
+      name: my-test-bucket
+      s3_url: http://localhost:4566
+      state: present
